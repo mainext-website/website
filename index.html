@@ -22,7 +22,7 @@
     header {
       background: linear-gradient(135deg, #8e2de2, #f72585);
       color: white;
-      padding: 60px 20px;
+      padding: 60px 20px 20px 20px;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -34,6 +34,14 @@
       left: 20px;
       height: 60px;
       background: transparent;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        height: 40px;
+        top: 10px;
+        left: 10px;
+      }
     }
 
     header h1 {
@@ -158,6 +166,38 @@
       cursor: pointer;
     }
 
+    .carousel-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      position: relative;
+    }
+
+    .carousel-project {
+      margin-bottom: 40px;
+    }
+
+    .carousel-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .carousel img {
+      height: 300px;
+      border-radius: 8px;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+    }
+
     @keyframes fadeInDown {
       from { opacity: 0; transform: translateY(-30px); }
       to { opacity: 1; transform: translateY(0); }
@@ -178,7 +218,7 @@
 
 <body>
   <header>
-    <img src="logo.png" alt="Mainext Logo" class="logo">
+    <img src="./logo.png" alt="Mainext Logo" class="logo">
     <h1>Mainext Innovations</h1>
     <p>Empowering Ideas. Engineering Innovation. Delivering Results.</p>
   </header>
@@ -209,6 +249,40 @@
       <p>Money in/out flow, vendor payments, and multi-branch transaction handling for mobile shops.</p>
     </div>
   </section>
+
+  <div class="carousel-container">
+    <div class="carousel-project">
+      <div class="carousel-title">EC Recharge Web App</div>
+      <div class="carousel">
+        <img src="recharge1.png" alt="EC Recharge Screenshot 1">
+        <img src="recharge2.png" alt="EC Recharge Screenshot 2">
+        <img src="recharge3.png" alt="EC Recharge Screenshot 3">
+      </div>
+    </div>
+    <div class="carousel-project">
+      <div class="carousel-title">Mobile Service Tracker</div>
+      <div class="carousel">
+        <img src="tracker1.png" alt="Service Tracker Screenshot 1">
+        <img src="tracker2.png" alt="Service Tracker Screenshot 2">
+        <img src="tracker3.png" alt="Service Tracker Screenshot 3">
+      </div>
+    </div>
+    <div class="carousel-project">
+      <div class="carousel-title">Eclipse Invoice Generator</div>
+      <div class="carousel">
+        <img src="invoice1.png" alt="Invoice Screenshot 1">
+        <img src="invoice2.png" alt="Invoice Screenshot 2">
+        <img src="invoice3.png" alt="Invoice Screenshot 3">
+      </div>
+    </div>
+    <div class="carousel-project">
+      <div class="carousel-title">Account Management System</div>
+      <div class="carousel">
+        <img src="account1.png" alt="Account Screenshot 1">
+        <img src="account2.png" alt="Account Screenshot 2">
+      </div>
+    </div>
+  </div>
 
   <section id="skills">
     <h2>Technologies We Excel In</h2>
