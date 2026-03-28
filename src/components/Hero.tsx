@@ -1,13 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Sparkles } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
+import { getScrollBehavior } from "@/lib/utils";
 
 const Hero = () => {
   const scrollToPortfolio = () => {
-    document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+    trackEvent("hero_primary_cta_click", {
+      section: "hero",
+      target: "portfolio",
+      cta_label: "View Case Studies",
+    });
+    document.getElementById("portfolio")?.scrollIntoView({ behavior: getScrollBehavior() });
   };
 
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    trackEvent("hero_secondary_cta_click", {
+      section: "hero",
+      target: "contact",
+      cta_label: "Book Free Consultation",
+    });
+    document.getElementById("contact")?.scrollIntoView({ behavior: getScrollBehavior() });
   };
 
   return (
@@ -26,19 +38,20 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           <div className="flex items-center justify-center gap-2 mb-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <Sparkles className="w-6 h-6 text-accent" />
-            <span className="text-accent font-medium">Welcome to Mainext Innovations</span>
+            <span className="text-accent font-medium">Mainext Innovations</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              We Build Digital
+              We Build Growth-Ready
             </span>
             <br />
-            <span className="text-primary">Experiences</span>
+            <span className="text-primary">Websites and Systems</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.6s' }}>
-            Empowering Ideas. Engineering Innovation. Delivering Results.
+            We help startups and small businesses launch conversion-focused websites,
+            automate manual workflows, and move faster with reliable digital systems.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: '0.8s' }}>
@@ -48,7 +61,7 @@ const Hero = () => {
               onClick={scrollToPortfolio}
             >
               <Code className="w-5 h-5 mr-2" />
-              View Our Work
+              View Case Studies
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
 
@@ -58,9 +71,13 @@ const Hero = () => {
               className="border-primary/50 hover:bg-primary/10 transition-smooth"
               onClick={scrollToContact}
             >
-              Get In Touch
+              Book Free Consultation
             </Button>
           </div>
+
+          <p className="text-sm md:text-base text-muted-foreground mt-6 animate-slide-up" style={{ animationDelay: '0.9s' }}>
+            Delivered 5+ projects • 100% client satisfaction • Reply within 24 hours
+          </p>
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 animate-slide-up" style={{ animationDelay: '1s' }}>
             <div className="text-center">
@@ -72,8 +89,8 @@ const Hero = () => {
               <div className="text-muted-foreground">Client Satisfaction</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-              <div className="text-muted-foreground">Support Available</div>
+              <div className="text-3xl font-bold text-primary mb-2">24h</div>
+              <div className="text-muted-foreground">Average Response Time</div>
             </div>
           </div>
         </div>

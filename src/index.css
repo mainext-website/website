@@ -8,10 +8,10 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 26% 6%;
+    --background: 220 24% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 220 26% 8%;
+    --card: 220 24% 11%;
     --card-foreground: 0 0% 95%;
 
     --popover: 220 26% 8%;
@@ -20,7 +20,7 @@ All colors MUST be HSL.
     --primary: 262 83% 58%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 220 14% 15%;
+    --secondary: 220 14% 16%;
     --secondary-foreground: 0 0% 90%;
 
     --muted: 220 14% 15%;
@@ -32,20 +32,20 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 14% 20%;
-    --input: 220 14% 15%;
+    --border: 220 14% 24%;
+    --input: 220 14% 18%;
     --ring: 262 83% 58%;
 
     --radius: 0.5rem;
 
     /* Custom gradients */
     --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(197 100% 63%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(220 26% 8% / 0.6) 0%, hsl(220 26% 12% / 0.4) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(220 24% 11% / 0.66) 0%, hsl(220 24% 14% / 0.45) 100%);
     --gradient-hero: radial-gradient(ellipse at top, hsl(262 83% 58% / 0.3) 0%, transparent 50%);
     
     /* Shadows */
     --shadow-glow: 0 0 40px hsl(262 83% 58% / 0.3);
-    --shadow-card: 0 8px 32px hsl(220 26% 4% / 0.4);
+    --shadow-card: 0 10px 36px hsl(220 26% 4% / 0.35);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,22 +68,22 @@ All colors MUST be HSL.
   }
 
   .light {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 24% 97%;
+    --foreground: 222.2 47% 11%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 99%;
+    --card-foreground: 222.2 47% 11%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 99%;
+    --popover-foreground: 222.2 47% 11%;
 
     --primary: 262 83% 58%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96%;
+    --secondary: 210 30% 94%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96%;
+    --muted: 210 24% 93%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
     --accent: 197 100% 63%;
@@ -92,15 +92,15 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 214.3 24% 84%;
+    --input: 214.3 24% 86%;
     --ring: 262 83% 58%;
 
     /* Light mode shadows and gradients */
     --shadow-glow: 0 0 40px hsl(262 83% 58% / 0.2);
-    --shadow-card: 0 8px 32px hsl(220 26% 14% / 0.1);
+    --shadow-card: 0 8px 24px hsl(220 26% 14% / 0.08);
     --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(197 100% 63%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.8) 0%, hsl(210 40% 96% / 0.6) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.86) 0%, hsl(210 30% 94% / 0.75) 100%);
     --gradient-hero: radial-gradient(ellipse at top, hsl(262 83% 58% / 0.1) 0%, transparent 50%);
 
     --sidebar-background: 0 0% 98%;
@@ -175,5 +175,25 @@ All colors MUST be HSL.
   .glass {
     backdrop-filter: blur(10px);
     border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .defer-section {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 960px;
+  }
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

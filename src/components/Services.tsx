@@ -1,57 +1,58 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Globe, Database, Brain, Smartphone, Palette, Zap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Globe, Settings, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
+import { trackEvent } from "@/lib/analytics";
+import { getScrollBehavior } from "@/lib/utils";
 
 const services = [
   {
     icon: Globe,
-    title: "React Development",
-    description: "Modern UI development with React for responsive, interactive web applications.",
-    features: ["Component Architecture", "State Management", "Responsive Design", "Performance"]
+    slug: "website-landing-systems",
+    title: "Website and Landing Systems",
+    description: "High-performing websites designed to build trust, rank better, and convert visitors into leads.",
+    bestFor: "Best for: startups, local businesses, service providers",
+    features: ["Conversion-focused pages", "Mobile-first UX", "SEO-ready setup", "Fast deployment"]
   },
   {
-    icon: Database,
-    title: "Python & Node.js",
-    description: "Scalable backend APIs using Python and Node.js with robust data management solutions.",
-    features: ["REST APIs", "Database Design", "Authentication", "Scalable Architecture"]
-  },
-  {
-    icon: Database,
-    title: "SQL & Database",
-    description: "Robust data management with SQL databases for reliable and efficient data operations.",
-    features: ["Database Design", "Query Optimization", "Data Security", "Migration"]
-  },
-  {
-    icon: Globe,
-    title: "AWS Cloud",
-    description: "Cloud deployment and infrastructure management for scalable, reliable applications.",
-    features: ["Server Setup", "Auto Scaling", "Security", "Monitoring"]
-  },
-  {
-    icon: Brain,
-    title: "AI Integration",
-    description: "Smart features integration in applications using modern AI technologies.",
-    features: ["Machine Learning", "Natural Language", "Automation", "Smart Analytics"]
+    icon: Settings,
+    slug: "business-process-automation",
+    title: "Business Process Automation",
+    description: "Automate repetitive tasks and connect your tools so your team can save time and reduce manual errors.",
+    bestFor: "Best for: operations-heavy teams and growing businesses",
+    features: ["Workflow automation", "API integrations", "Data sync", "Reporting dashboards"]
   },
   {
     icon: Zap,
-    title: "Custom Solutions",
-    description: "Tailored web applications designed specifically for your business needs.",
-    features: ["Business Logic", "Custom Features", "Integration", "Support"]
+    slug: "technical-support-optimization",
+    title: "Technical Support and Optimization",
+    description: "Improve reliability, speed, and maintainability of your existing product with focused engineering support.",
+    bestFor: "Best for: teams needing ongoing technical partner support",
+    features: ["Performance tuning", "Bug fixes", "Feature enhancement", "Release support"]
   }
 ];
 
+const scrollToContact = () => {
+  trackEvent("service_cta_click", {
+    section: "services",
+    target: "contact",
+    cta_label: "Get a Tailored Solution Plan",
+  });
+  document.getElementById("contact")?.scrollIntoView({ behavior: getScrollBehavior() });
+};
+
 const Services = () => {
   return (
-    <section className="py-24 bg-secondary/20" id="services">
+    <section className="py-24 bg-secondary/20 defer-section" id="services">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Our Services
+              Services Built for Business Outcomes
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We offer comprehensive digital solutions to bring your vision to life
+            We combine product thinking and engineering to help you launch faster, operate better, and grow consistently.
           </p>
         </div>
         
@@ -74,6 +75,7 @@ const Services = () => {
                   <CardDescription className="text-muted-foreground leading-relaxed">
                     {service.description}
                   </CardDescription>
+                  <p className="text-sm text-foreground/80 font-medium mt-2">{service.bestFor}</p>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
@@ -84,10 +86,24 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
+                  <Button variant="link" className="px-0 mt-4" asChild>
+                    <Link to={`/services/${service.slug}`}>Learn more</Link>
+                  </Button>
                 </CardContent>
               </Card>
             );
           })}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Button
+            size="lg"
+            className="bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300 group"
+            onClick={scrollToContact}
+          >
+            Get a Tailored Solution Plan
+            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </div>
     </section>

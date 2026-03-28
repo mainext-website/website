@@ -2,24 +2,47 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { getScrollBehavior } from "@/lib/utils";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "Services", href: "#services" },
     { name: "Portfolio", href: "#portfolio" },
+    { name: "Process", href: "#process" },
     { name: "Testimonials", href: "#testimonials" },
+    { name: "FAQ", href: "#faq" },
     { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
-    if (href === "#home") {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname !== "/") {
+      navigate(href === "#home" ? "/" : `/${href}`);
+      setIsOpen(false);
+      return;
     }
+
+    if (href === "#home") {
+      window.scrollTo({ top: 0, behavior: getScrollBehavior() });
+    } else {
+      document.querySelector(href)?.scrollIntoView({ behavior: getScrollBehavior() });
+    }
+    setIsOpen(false);
+  };
+
+  const goToHome = () => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setIsOpen(false);
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: getScrollBehavior() });
     setIsOpen(false);
   };
 
@@ -29,11 +52,16 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-2xl font-bold">
+            <button
+              type="button"
+              onClick={goToHome}
+              className="text-2xl font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 rounded"
+              aria-label="Go to home"
+            >
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Mainext
               </span>
-            </span>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -63,6 +91,9 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-foreground hover:text-primary transition-colors"
+              aria-label={isOpen ? "Close mobile menu" : "Open mobile menu"}
+              aria-expanded={isOpen}
+              aria-controls="mobile-nav-menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -71,7 +102,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-primary/20 animate-fade-in">
+          <div id="mobile-nav-menu" className="md:hidden py-4 border-t border-primary/20 animate-fade-in">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button

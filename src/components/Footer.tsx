@@ -1,13 +1,13 @@
-import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "mailto:hello@Mainext.com", label: "Email" },
+    { icon: Github, href: "https://github.com/mainextinnovations", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/mainext-innovations", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/mainext.in", label: "Instagram" },
+    { icon: Mail, href: "mailto:mainextinnovations@gmail.com", label: "Email" },
   ];
 
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Empowering Ideas. Engineering Innovation. Delivering Results.
+              Conversion-focused websites and automation systems for growing businesses.
             </p>
           </div>
 
@@ -64,6 +64,8 @@ const Footer = () => {
                   <a
                     key={social.label}
                     href={social.href}
+                    target={social.href.startsWith("http") ? "_blank" : undefined}
+                    rel={social.href.startsWith("http") ? "noreferrer noopener" : undefined}
                     aria-label={social.label}
                     className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300 group"
                   >
@@ -80,7 +82,7 @@ const Footer = () => {
           <p className="flex items-center gap-2">
             © {currentYear} Mainext Innovations. Made with
             <Heart className="w-4 h-4 text-red-500" />
-            and cutting-edge technology.
+            for modern business growth.
           </p>
           <p className="mt-4 md:mt-0">
             All rights reserved.
