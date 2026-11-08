@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://mainext.in/</loc>
-    <lastmod>2026-03-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://mainext.in/</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/work</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/work/aqua-erp</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/work/eclipse-invoicing</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/work/gromet</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/work/mobile-service-tracker</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/work/mobile-shop-accounts</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/work/nsl-website</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/work/polymer-plastics-invoicing</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/work/rvs-holidays</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/work/sakthi-mobiles-suite</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/services/business-websites</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/services/billing-accounts-software</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/services/custom-erp</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/services/web-mobile-apps</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/services/ai-automation</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://mainext.in/services/care-plan</loc><lastmod>2026-11-08</lastmod></url>
 </urlset>
