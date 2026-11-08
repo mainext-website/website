@@ -1,0 +1,50 @@
+{
+  "slug": "sakthi-mobiles-suite",
+  "title": "Sakthi Mobiles Business Suite",
+  "client": "Sakthi Mobiles",
+  "industry": "Mobile retail",
+  "category": "erp",
+  "year": "2024",
+  "status": "in-use",
+  "summary": "A multi-branch suite for a mobile retailer: services, recharge, accounts and branch reports.",
+  "problem": "After the first two systems worked, the shop grew to multiple branches. Each branch ran separately and the owner had no combined view.",
+  "solution": "One suite that brings branch services, recharge transactions and accounts together, with branch-level controls and a combined owner dashboard.",
+  "features": [
+    {
+      "title": "Multi-branch",
+      "description": "Each branch works independently; the owner sees everything."
+    },
+    {
+      "title": "Recharge transactions",
+      "description": "Secure, traceable recharge handling across branches."
+    },
+    {
+      "title": "Combined reports",
+      "description": "Daily and monthly numbers per branch and overall."
+    }
+  ],
+  "aiNote": "AI-assisted code review and test generation kept a large codebase reliable while adding features quickly.",
+  "results": [
+    "One dashboard for all branches",
+    "Faster daily reconciliation",
+    "Client since 2021"
+  ],
+  "stack": [
+    "React",
+    "Node.js",
+    "SQL"
+  ],
+  "duration": "8 weeks",
+  "testimonial": {
+    "quote": "Their recharge platform simplified multi-branch operations. The dashboard gave us clear control over daily transactions.",
+    "name": "MK Logu",
+    "role": "Manager, Sakthi Mobiles"
+  },
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "order": 2,
+  "size": "wide",
+  "published": true
+}

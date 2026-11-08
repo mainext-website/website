@@ -1,0 +1,51 @@
+{
+  "slug": "aqua-erp",
+  "title": "Aqua ERP",
+  "client": "Aqua",
+  "industry": "Manufacturing",
+  "category": "erp",
+  "year": "2025",
+  "status": "in-use",
+  "summary": "A custom ERP that runs orders, stock, production and dispatch in one place.",
+  "problem": "Orders, stock and dispatch were tracked across separate Excel sheets and phone calls. Nobody had one view of what was pending, what was in stock and what had shipped.",
+  "solution": "A custom ERP built around the way the team already works: order entry, stock movement, production status, dispatch and owner reports, with role-based access for office and floor staff.",
+  "features": [
+    {
+      "title": "Order to dispatch flow",
+      "description": "Every order moves through clear stages with who-did-what history."
+    },
+    {
+      "title": "Live stock",
+      "description": "Stock updates automatically on purchase, production and dispatch."
+    },
+    {
+      "title": "Owner dashboard",
+      "description": "Today's sales, pending orders and low-stock alerts on one screen."
+    },
+    {
+      "title": "Roles and permissions",
+      "description": "Office, floor and owner each see only what they need."
+    }
+  ],
+  "aiNote": "AI helped draft the data model, generate screens and write test data, so more time went into understanding the client's process.",
+  "results": [
+    "One system replaced the scattered sheets",
+    "Owner sees the day's position without calling anyone",
+    "Still in daily use"
+  ],
+  "stack": [
+    "React",
+    "Node.js",
+    "MySQL",
+    "REST API"
+  ],
+  "duration": "10 weeks",
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "order": 1,
+  "size": "large",
+  "published": true
+}

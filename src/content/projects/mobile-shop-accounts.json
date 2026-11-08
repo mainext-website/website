@@ -1,0 +1,40 @@
+{
+  "slug": "mobile-shop-accounts",
+  "title": "Mobile Shop Accounts",
+  "client": "Sakthi Mobiles",
+  "industry": "Mobile retail",
+  "category": "billing",
+  "year": "2022",
+  "status": "in-use",
+  "summary": "Money in, money out and vendor payments for a mobile shop.",
+  "problem": "Daily cash, vendor payments and expenses were in notebooks and spreadsheets.",
+  "solution": "A simple accounts app with daily entries, vendor balances and monthly summaries.",
+  "features": [
+    {
+      "title": "Daily entries",
+      "description": "Cash and bank in and out in a few taps."
+    },
+    {
+      "title": "Vendor balances",
+      "description": "See who is owed what at any time."
+    }
+  ],
+  "aiNote": "",
+  "results": [
+    "Month-end is no longer a guessing game"
+  ],
+  "stack": [
+    "React",
+    "Python",
+    "SQL"
+  ],
+  "duration": "4 weeks",
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": false,
+  "order": 8,
+  "size": "normal",
+  "published": true
+}

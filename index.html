@@ -1,72 +1,80 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mainext | Web Development, Automation and AI Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mainext Innovations · Websites, ERP & Business Software by Parthiban V</title>
   <meta name="description"
-    content="Mainext builds conversion-focused websites, business automation systems, and AI-powered workflows for growing businesses." />
-  <meta name="author" content="Mainext" />
+    content="Parthiban V builds websites, billing software, custom ERPs and apps for growing businesses, with an AI-first workflow and 12+ years of IT experience." />
+  <meta name="author" content="Parthiban V" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0D121C" />
   <link rel="canonical" href="https://mainext.in/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-  <meta property="og:title" content="Mainext | Web Development, Automation and AI Solutions" />
+  <meta property="og:title" content="Mainext Innovations · Websites, ERP & Business Software by Parthiban V" />
   <meta property="og:description"
-    content="Mainext builds conversion-focused websites, business automation systems, and AI-powered workflows for growing businesses." />
+    content="Parthiban V builds websites, billing software, custom ERPs and apps for growing businesses, with an AI-first workflow and 12+ years of IT experience." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mainext.in/" />
-  <meta property="og:site_name" content="Mainext" />
+  <meta property="og:site_name" content="Mainext Innovations" />
   <meta property="og:locale" content="en_IN" />
-  <meta property="og:image" content="https://mainext.in/og-image.svg" />
+  <meta property="og:image" content="https://mainext.in/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Mainext web development and automation services" />
-
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mainext | Web Development, Automation and AI Solutions" />
+  <meta name="twitter:title" content="Mainext Innovations · Websites, ERP & Business Software by Parthiban V" />
   <meta name="twitter:description"
-    content="Mainext builds conversion-focused websites, business automation systems, and AI-powered workflows for growing businesses." />
-  <meta name="twitter:image" content="https://mainext.in/og-image.svg" />
-  <meta name="twitter:site" content="@Mainext_dev" />
-  <meta name="twitter:creator" content="@Mainext_dev" />
+    content="Websites, billing software, custom ERPs and apps for growing businesses. AI-first, built to last." />
+  <meta name="twitter:image" content="https://mainext.in/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;500;600;700&display=swap" />
+
+  <script>
+    // Apply the saved theme before first paint so there is no flash.
+    try {
+      var t = localStorage.getItem("mainext-theme-v2") || "dark";
+      if (t === "system") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.className = t;
+    } catch (e) {}
+  </script>
 
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Organization",
-          "@id": "https://mainext.in/#organization",
-          "name": "Mainext",
+          "@type": "Person",
+          "@id": "https://mainext.in/#person",
+          "name": "Parthiban V",
+          "jobTitle": "Full-stack engineer",
           "url": "https://mainext.in/",
-          "logo": "https://mainext.in/og-image.svg",
-          "sameAs": [
-            "https://www.linkedin.com/company/mainext",
-            "https://www.instagram.com/mainext.dev",
-            "https://github.com/mainext"
-          ]
+          "worksFor": { "@id": "https://mainext.in/#business" }
         },
         {
           "@type": "ProfessionalService",
-          "@id": "https://mainext.in/#service",
-          "name": "Mainext",
+          "@id": "https://mainext.in/#business",
+          "name": "Mainext Innovations",
           "url": "https://mainext.in/",
-          "description": "Mainext delivers web development, business automation, and AI integration services for startups and growing businesses.",
-          "serviceType": [
-            "Web Development",
-            "Business Automation",
-            "AI Integration"
-          ],
+          "logo": "https://mainext.in/favicon.svg",
+          "founder": { "@id": "https://mainext.in/#person" },
+          "description": "Websites, billing and accounts software, custom ERPs, apps and AI automation for growing businesses.",
           "areaServed": "India",
-          "provider": {
-            "@id": "https://mainext.in/#organization"
-          }
+          "knowsLanguage": ["en", "ta"],
+          "sameAs": [
+            "https://www.linkedin.com/company/mainext-innovations",
+            "https://www.instagram.com/mainext.in",
+            "https://github.com/mainextinnovations"
+          ]
         },
         {
           "@type": "WebSite",
           "@id": "https://mainext.in/#website",
-          "name": "Mainext",
+          "name": "Mainext Innovations",
           "url": "https://mainext.in/"
         }
       ]
@@ -76,6 +84,7 @@
 
 <body>
   <div id="root"></div>
+  <noscript>Mainext Innovations: websites, billing software, custom ERPs and apps by Parthiban V. Email mainextinnovations@gmail.com.</noscript>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 

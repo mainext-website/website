@@ -1,0 +1,68 @@
+{
+  "brand": "Mainext Innovations",
+  "person": {
+    "name": "Parthiban V",
+    "role": "Full-stack engineer · AI-first builder",
+    "photo": ""
+  },
+  "experienceYears": 12,
+  "freelanceSince": 2021,
+  "availability": {
+    "open": true,
+    "text": "Open for new projects"
+  },
+  "hero": {
+    "words": ["ERP", "billing software", "website", "mobile app", "automation"],
+    "subtitle": "Websites, billing and accounts software, custom ERPs and full apps for growing businesses. Built faster with AI, held to the standards of 12+ years in professional IT."
+  },
+  "contact": {
+    "email": "mainextinnovations@gmail.com",
+    "whatsapp": "",
+    "phone": "",
+    "bookingUrl": "",
+    "location": "Tamil Nadu, India · working with clients India-wide",
+    "languages": "Tamil · English"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/mainext-innovations",
+    "github": "https://github.com/mainextinnovations",
+    "instagram": "https://www.instagram.com/mainext.in"
+  },
+  "journey": [
+    {
+      "when": "2021",
+      "title": "Where it started",
+      "text": "Built service-tracking software for a local mobile shop. My first paying client."
+    },
+    {
+      "when": "Next",
+      "title": "They came back",
+      "text": "The same shop asked for accounts software to track money in, money out and vendor payments."
+    },
+    {
+      "when": "Referral",
+      "title": "First referral",
+      "text": "Their business partner needed invoice management for a textile brand. That became Eclipse."
+    },
+    {
+      "when": "New industry",
+      "title": "Same idea, new business",
+      "text": "Adapted the invoice system for Polymer Plastics, a manufacturer with different billing rules."
+    },
+    {
+      "when": "Growing",
+      "title": "Bigger systems, first websites",
+      "text": "A larger multi-branch suite for the mobile shop, then websites for RVS Holidays and NSL."
+    },
+    {
+      "when": "2025",
+      "title": "Mainext Innovations",
+      "text": "Gave the work a name and took on a full custom ERP."
+    },
+    {
+      "when": "Now",
+      "title": "AI-first",
+      "text": "Every build now runs on an AI-assisted workflow. Building my own app, Gromet, alongside client work."
+    }
+  ]
+}

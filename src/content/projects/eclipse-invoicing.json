@@ -1,0 +1,50 @@
+{
+  "slug": "eclipse-invoicing",
+  "title": "Eclipse Invoice Manager",
+  "client": "Eclipse Innerwear",
+  "industry": "Textile distribution",
+  "category": "billing",
+  "year": "2023",
+  "status": "in-use",
+  "summary": "Invoice and billing system for a textile brand dispatching to many stores.",
+  "problem": "Invoices were typed by hand for every store dispatch. Repeated items, GST and edits made it slow and error-prone.",
+  "solution": "A guided invoice flow with saved products, customers and GST rules, printable invoices and searchable history.",
+  "features": [
+    {
+      "title": "Quick invoice",
+      "description": "Pick customer and items; totals and GST calculate themselves."
+    },
+    {
+      "title": "Print-ready",
+      "description": "Clean invoice layout ready to print or share as PDF."
+    },
+    {
+      "title": "History and search",
+      "description": "Find any past invoice in seconds."
+    }
+  ],
+  "aiNote": "AI generated the first version of the invoice templates and edge-case tests for GST calculations.",
+  "results": [
+    "Invoices take minutes instead of a long manual process",
+    "Fewer billing mistakes",
+    "Came through a referral"
+  ],
+  "stack": [
+    "React",
+    "Node.js",
+    "PDF"
+  ],
+  "duration": "4 weeks",
+  "testimonial": {
+    "quote": "Outstanding service. The invoice management system streamlined our distribution process and reduced manual confusion for our team.",
+    "name": "Gandhi",
+    "role": "Business Owner, Eclipse Innerwear"
+  },
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "order": 3,
+  "size": "normal",
+  "published": true
+}

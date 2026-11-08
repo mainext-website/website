@@ -1,0 +1,45 @@
+{
+  "slug": "rvs-holidays",
+  "title": "RVS Holidays",
+  "client": "RVS Holidays",
+  "industry": "Travel agency",
+  "category": "website",
+  "year": "2025",
+  "status": "live",
+  "summary": "A travel agency website that turns visitors into WhatsApp and phone enquiries.",
+  "problem": "The agency relied on word of mouth and had no place to show packages online.",
+  "solution": "A fast, mobile-first website with tour packages, destination pages and one-tap enquiry.",
+  "features": [
+    {
+      "title": "Package pages",
+      "description": "Clear itineraries, inclusions and photos."
+    },
+    {
+      "title": "One-tap enquiry",
+      "description": "WhatsApp and call buttons on every package."
+    },
+    {
+      "title": "Search-ready",
+      "description": "SEO basics so the agency shows up on Google."
+    }
+  ],
+  "aiNote": "AI drafted package copy and image layouts that the client then reviewed.",
+  "results": [
+    "The agency now has a place to send customers",
+    "Enquiries come straight to WhatsApp"
+  ],
+  "stack": [
+    "React",
+    "Tailwind",
+    "SEO"
+  ],
+  "duration": "2 weeks",
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "order": 5,
+  "size": "wide",
+  "published": true
+}

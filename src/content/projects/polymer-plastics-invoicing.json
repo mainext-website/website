@@ -1,0 +1,41 @@
+{
+  "slug": "polymer-plastics-invoicing",
+  "title": "Polymer Plastics Invoicing",
+  "client": "Polymer Plastics",
+  "industry": "Plastics manufacturing",
+  "category": "billing",
+  "year": "2023",
+  "status": "in-use",
+  "summary": "The invoice system adapted for a plastics manufacturer with its own billing rules.",
+  "problem": "A manufacturer needed the same clarity in billing but with different units, rates and customer terms.",
+  "solution": "Adapted the invoice platform with configurable units, rate lists and customer-specific terms.",
+  "features": [
+    {
+      "title": "Configurable units and rates",
+      "description": "Kg, pieces, bags and custom rate lists."
+    },
+    {
+      "title": "Customer terms",
+      "description": "Credit days and pricing per customer."
+    }
+  ],
+  "aiNote": "AI helped map the differences between the two businesses and refactor the shared code safely.",
+  "results": [
+    "Delivered faster by reusing a proven base",
+    "Billing matches how the factory actually sells"
+  ],
+  "stack": [
+    "React",
+    "Node.js",
+    "SQL"
+  ],
+  "duration": "3 weeks",
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "order": 4,
+  "size": "normal",
+  "published": true
+}

@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Manrope", "system-ui", "sans-serif"],
+        display: ['"Bricolage Grotesque"', "Manrope", "system-ui", "sans-serif"],
+        mono: ['"JetBrains Mono"', "ui-monospace", "Menlo", "monospace"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

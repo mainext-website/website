@@ -1,0 +1,39 @@
+{
+  "slug": "gromet",
+  "title": "Gromet",
+  "client": "Own product",
+  "industry": "Product",
+  "category": "app",
+  "year": "2026",
+  "status": "own-product",
+  "summary": "My own app, designed, built and run end to end.",
+  "problem": "Describe the problem Gromet solves here.",
+  "solution": "Describe what Gromet does and who it is for.",
+  "features": [
+    {
+      "title": "Feature one",
+      "description": "Replace with a real feature."
+    },
+    {
+      "title": "Feature two",
+      "description": "Replace with a real feature."
+    }
+  ],
+  "aiNote": "Built with an AI-first workflow from idea to release.",
+  "results": [
+    "Built and maintained end to end"
+  ],
+  "stack": [
+    "React Native",
+    "Node.js"
+  ],
+  "duration": "Ongoing",
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "order": 7,
+  "size": "wide",
+  "published": true
+}

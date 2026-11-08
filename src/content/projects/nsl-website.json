@@ -1,0 +1,39 @@
+{
+  "slug": "nsl-website",
+  "title": "NSL",
+  "client": "NSL",
+  "industry": "Building materials",
+  "category": "website",
+  "year": "2025",
+  "status": "live",
+  "summary": "A product and company website for a materials supplier.",
+  "problem": "B2B buyers had no easy way to see the product range or contact the right person.",
+  "solution": "A clean company site with a product catalogue, company profile and enquiry form.",
+  "features": [
+    {
+      "title": "Product catalogue",
+      "description": "Products grouped by type with specs."
+    },
+    {
+      "title": "Enquiry flow",
+      "description": "Buyers send requirements in one step."
+    }
+  ],
+  "aiNote": "AI helped structure the catalogue and write first drafts of product descriptions.",
+  "results": [
+    "A professional first impression for B2B buyers"
+  ],
+  "stack": [
+    "React",
+    "Tailwind"
+  ],
+  "duration": "2 weeks",
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "order": 6,
+  "size": "wide",
+  "published": true
+}
