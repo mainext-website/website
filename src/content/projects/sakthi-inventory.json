@@ -1,7 +1,16 @@
 {
   "testimonial": null,
-  "cover": "",
-  "gallery": [],
+  "cover": "/uploads/projects/sakthi-inventory/billing.webp",
+  "gallery": [
+    {
+      "src": "/uploads/projects/sakthi-inventory/purchase-grn.webp",
+      "caption": "Illustration: purchase receipt with IMEI capture"
+    },
+    {
+      "src": "/uploads/projects/sakthi-inventory/stock.webp",
+      "caption": "Illustration: branch stock and transfers in transit"
+    }
+  ],
   "liveUrl": "",
   "featured": true,
   "published": true,
@@ -43,7 +52,7 @@
       "description": "Permission-based access, scoped to each user's branch."
     }
   ],
-  "aiNote": "Built AI-first from a detailed PRD; each module followed the same template from schema to screens to tests.",
+  "aiNote": "Built AI-first from a detailed PRD; each module followed the same template from schema to screens to tests. Screens shown are illustrative mock-ups with sample data; the live system is private to the client.",
   "results": [
     "Replaced an expiring third-party product",
     "Designed as a SaaS for any retail shop",

@@ -1,7 +1,12 @@
 {
   "testimonial": null,
-  "cover": "",
-  "gallery": [],
+  "cover": "/uploads/projects/polymer-plastics-invoicing/invoice.webp",
+  "gallery": [
+    {
+      "src": "/uploads/projects/polymer-plastics-invoicing/ledger.webp",
+      "caption": "Illustration: customer ledger with running balance"
+    }
+  ],
   "liveUrl": "",
   "featured": true,
   "published": true,
@@ -43,7 +48,7 @@
       "description": "The database is backed up and emailed every day."
     }
   ],
-  "aiNote": "AI helped map the differences between the two businesses and adapt the shared code safely.",
+  "aiNote": "AI helped map the differences between the two businesses and adapt the shared code safely. Screens shown are illustrative mock-ups with sample data; the live system is private to the client.",
   "results": [
     "Delivered fast by reusing a proven base",
     "In use since 2024, now on managed hosting",

@@ -4,8 +4,17 @@
     "name": "MK Logu",
     "role": "Manager, Sakthi Mobiles"
   },
-  "cover": "",
-  "gallery": [],
+  "cover": "/uploads/projects/sakthi-ec/recharge.webp",
+  "gallery": [
+    {
+      "src": "/uploads/projects/sakthi-ec/operators.webp",
+      "caption": "Illustration: operators switched between the recharge API and manual entry"
+    },
+    {
+      "src": "/uploads/projects/sakthi-ec/operator-report.webp",
+      "caption": "Illustration: operator daily report that feeds Sakthi Accounts"
+    }
+  ],
   "liveUrl": "",
   "featured": true,
   "published": true,
@@ -43,7 +52,7 @@
       "description": "A secure API sends daily recharge figures to Sakthi Accounts automatically."
     }
   ],
-  "aiNote": "AI helped document the recharge flow and operator rules end to end, and review changes to money-handling code.",
+  "aiNote": "AI helped document the recharge flow and operator rules end to end, and review changes to money-handling code. Screens shown are illustrative mock-ups with sample data; the live system is private to the client.",
   "results": [
     "Every recharge traceable by branch and staff",
     "Daily operator profit without a spreadsheet",

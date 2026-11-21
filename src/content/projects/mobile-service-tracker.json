@@ -4,7 +4,7 @@
     "name": "Logu",
     "role": "Shop Owner, Sakthi Mobiles"
   },
-  "cover": "",
+  "cover": "/uploads/projects/mobile-service-tracker/job-board.webp",
   "gallery": [],
   "liveUrl": "",
   "featured": false,
@@ -35,7 +35,7 @@
       "description": "Fault, parts and charges recorded per job."
     }
   ],
-  "aiNote": "",
+  "aiNote": "Screens shown are illustrative mock-ups with sample data; the live system is private to the client.",
   "results": [
     "The first system, and the start of a client relationship since 2021",
     "Being rebuilt inside Sakthi Inventory"

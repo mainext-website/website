@@ -1,7 +1,16 @@
 {
   "testimonial": null,
-  "cover": "",
-  "gallery": [],
+  "cover": "/uploads/projects/mobile-shop-accounts/daily-summary.webp",
+  "gallery": [
+    {
+      "src": "/uploads/projects/mobile-shop-accounts/new-entry.webp",
+      "caption": "Illustration: an entry form built from the owner's counter setup"
+    },
+    {
+      "src": "/uploads/projects/mobile-shop-accounts/financial-overview.webp",
+      "caption": "Illustration: profit by branch and month"
+    }
+  ],
   "liveUrl": "",
   "featured": true,
   "published": true,
@@ -43,7 +52,7 @@
       "description": "Daily recharge sales arrive automatically from Sakthi EC."
     }
   ],
-  "aiNote": "AI helped turn the owner's Excel sheet into a configuration model, so new counters need setup instead of code.",
+  "aiNote": "AI helped turn the owner's Excel sheet into a configuration model, so new counters need setup instead of code. Screens shown are illustrative mock-ups with sample data; the live system is private to the client.",
   "results": [
     "Month-end is no longer a guessing game",
     "One system across branches and counters"
