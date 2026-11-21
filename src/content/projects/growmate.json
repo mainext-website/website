@@ -1,7 +1,12 @@
 {
   "testimonial": null,
-  "cover": "",
-  "gallery": [],
+  "cover": "/uploads/projects/growmate/home.webp",
+  "gallery": [
+    {
+      "src": "/uploads/projects/growmate/mobile-home.webp",
+      "caption": "The GrowMate site on a phone"
+    }
+  ],
   "liveUrl": "https://growmate.mainext.in",
   "featured": true,
   "published": true,
@@ -12,11 +17,11 @@
   "category": "app",
   "year": "2025",
   "status": "own-product",
-  "order": 10,
+  "order": 11,
   "size": "wide",
-  "summary": "My own personal finance app: income, spending, debts, investments and goals, with net worth in one place.",
+  "summary": "My own privacy-first finance tracker: income, investments, goals and net worth, in the cloud or as a desktop app.",
   "problem": "Most people track money across bank apps, notebooks and spreadsheets, and never see the full picture: what comes in, where it goes, what they owe, what they own and whether their goals are on track.",
-  "solution": "GrowMate brings it together: income with planned allocations, expenses, assets, debts, investments, insurance and goals, with net worth snapshots over time. It runs on the web and as a desktop app with automatic updates.",
+  "solution": "GrowMate is the privacy-first alternative to spreadsheets. It tracks income with planned allocations, expenses, assets, debts, investments, insurance and goals, with net worth over time. Use it in the browser, or download the desktop app for Windows, macOS or Linux and keep every number on your own machine. Both are free.",
   "features": [
     {
       "title": "Income and allocation",
@@ -43,14 +48,14 @@
       "description": "Regular snapshots show the whole picture moving."
     },
     {
-      "title": "Web and desktop",
-      "description": "Sign up with phone OTP; desktop app updates itself."
+      "title": "Cloud or desktop",
+      "description": "Use it in the browser, or offline on Windows, macOS and Linux with automatic updates."
     }
   ],
   "aiNote": "Designed, built and run end to end with an AI-first workflow, from data model to releases and usage analytics.",
   "results": [
     "Live with public sign-ups",
-    "Web app plus an auto-updating desktop app",
+    "Free on web and desktop",
     "Built and maintained end to end"
   ],
   "stack": [
