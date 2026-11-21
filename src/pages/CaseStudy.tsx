@@ -1,10 +1,10 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Quote, Sparkles } from "lucide-react";
 import SiteLayout from "@/components/site/SiteLayout";
 import ProjectVisual from "@/components/site/ProjectVisual";
 import Reveal from "@/components/site/Reveal";
 import ContactSection from "@/components/site/ContactSection";
-import { assetUrl, CATEGORY_LABELS, getProject, projects, STATUS_LABELS, type Project } from "@/lib/content";
+import { assetUrl, CATEGORY_LABELS, getProject, legacyProjectSlugs, projects, STATUS_LABELS, type Project } from "@/lib/content";
 import { useMeta } from "@/lib/useMeta";
 import NotFound from "./NotFound";
 
@@ -174,6 +174,7 @@ const CaseStudy = () => {
   const { slug = "" } = useParams();
   const project = getProject(slug);
   useMeta(project ? `${project.title} · Case study · Mainext` : "Not found · Mainext", project?.summary, `/work/${slug}`);
+  if (!project && legacyProjectSlugs[slug]) return <Navigate to={`/work/${legacyProjectSlugs[slug]}`} replace />;
   if (!project) return <NotFound />;
   return (
     <SiteLayout>

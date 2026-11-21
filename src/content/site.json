@@ -5,15 +5,21 @@
     "role": "Full-stack engineer · AI-first builder",
     "photo": ""
   },
-  "experienceYears": 12,
+  "careerStart": 2014,
   "freelanceSince": 2021,
   "availability": {
     "open": true,
     "text": "Open for new projects"
   },
   "hero": {
-    "words": ["ERP", "billing software", "website", "mobile app", "automation"],
-    "subtitle": "Websites, billing and accounts software, custom ERPs and full apps for growing businesses. Built faster with AI, held to the standards of 12+ years in professional IT."
+    "words": [
+      "ERP",
+      "billing software",
+      "website",
+      "mobile app",
+      "automation"
+    ],
+    "subtitle": "Websites, billing and accounts software, custom ERPs and full apps for growing businesses. Built faster with AI, held to the standards of {years}+ years in professional IT."
   },
   "contact": {
     "email": "mainextinnovations@gmail.com",
@@ -32,37 +38,37 @@
     {
       "when": "2021",
       "title": "Where it started",
-      "text": "Built service-tracking software for a local mobile shop. My first paying client."
+      "text": "Built service-tracking software for Sakthi Mobiles, a local mobile shop. My first paying client."
     },
     {
-      "when": "Next",
-      "title": "They came back",
-      "text": "The same shop asked for accounts software to track money in, money out and vendor payments."
-    },
-    {
-      "when": "Referral",
+      "when": "2024",
       "title": "First referral",
-      "text": "Their business partner needed invoice management for a textile brand. That became Eclipse."
+      "text": "Their business partner needed invoicing for a textile brand. That became Eclipse, still growing three years on."
     },
     {
-      "when": "New industry",
+      "when": "2024",
       "title": "Same idea, new business",
-      "text": "Adapted the invoice system for Polymer Plastics, a manufacturer with different billing rules."
+      "text": "Adapted the invoice system for Pandeeswari Polymers, a manufacturer with different billing rules."
     },
     {
-      "when": "Growing",
-      "title": "Bigger systems, first websites",
-      "text": "A larger multi-branch suite for the mobile shop, then websites for RVS Holidays and NSL."
+      "when": "2025",
+      "title": "They came back, twice",
+      "text": "Sakthi Mobiles asked for a recharge platform for its branches, then an accounts system to track daily profit."
     },
     {
       "when": "2025",
       "title": "Mainext Innovations",
-      "text": "Gave the work a name and took on a full custom ERP."
+      "text": "Gave the work a name and launched my own product, GrowMate, a personal finance app."
+    },
+    {
+      "when": "2026",
+      "title": "Bigger systems",
+      "text": "Inventory for Sakthi, an operations platform for NSL, the RVS Holidays website and a full contracting ERP for AC&CO."
     },
     {
       "when": "Now",
       "title": "AI-first",
-      "text": "Every build now runs on an AI-assisted workflow. Building my own app, Gromet, alongside client work."
+      "text": "Every build runs on an AI-assisted workflow: requirements, code and tests. All client apps run on servers I manage."
     }
   ]
 }

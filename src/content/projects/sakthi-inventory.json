@@ -1,0 +1,61 @@
+{
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "published": true,
+  "slug": "sakthi-inventory",
+  "title": "Sakthi Inventory",
+  "client": "Sakthi Mobiles",
+  "industry": "Mobile retail",
+  "category": "erp",
+  "year": "2026",
+  "status": "in-use",
+  "order": 4,
+  "size": "normal",
+  "summary": "Purchase to billing for a two-branch mobile shop, built to work for any retail business.",
+  "problem": "The shop's third-party inventory software was expiring and could not be changed. Purchases, serial numbers, branch stock and billing needed to move to a system the business owned, without losing data.",
+  "solution": "A multi-tenant inventory system with suppliers, purchases (GRN), central and branch stock, branch transfers, barcode billing and per-unit tracking, plus an import tool to move the old data across. A service and repair module is being added to replace the 2021 tracker.",
+  "features": [
+    {
+      "title": "Purchase to sale",
+      "description": "Suppliers, GRN purchases and returns, stock ledger and barcode-scan billing."
+    },
+    {
+      "title": "Branch transfers",
+      "description": "Send and receive stock between branches with a full trail."
+    },
+    {
+      "title": "Unit UID tracking",
+      "description": "Every phone tracked by serial or IMEI from purchase to sale or return."
+    },
+    {
+      "title": "Label printing",
+      "description": "A small Windows print bridge sends barcode labels to the shop's printer."
+    },
+    {
+      "title": "Data import",
+      "description": "Categories, products and opening stock imported from the old software."
+    },
+    {
+      "title": "Roles per branch",
+      "description": "Permission-based access, scoped to each user's branch."
+    }
+  ],
+  "aiNote": "Built AI-first from a detailed PRD; each module followed the same template from schema to screens to tests.",
+  "results": [
+    "Replaced an expiring third-party product",
+    "Designed as a SaaS for any retail shop",
+    "Third system for the same client"
+  ],
+  "stack": [
+    "React",
+    "TypeScript",
+    "shadcn/ui",
+    "FastAPI",
+    "MySQL",
+    "Alembic"
+  ],
+  "duration": "Since Mar 2026"
+}

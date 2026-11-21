@@ -1,34 +1,4 @@
 {
-  "slug": "mobile-service-tracker",
-  "title": "Mobile Service Tracker",
-  "client": "Sakthi Mobiles",
-  "industry": "Mobile service and repair",
-  "category": "erp",
-  "year": "2021",
-  "status": "in-use",
-  "summary": "Where it all started: repair intake, status and delivery for a mobile shop.",
-  "problem": "Repairs were tracked on paper. Customers kept calling to ask about status.",
-  "solution": "A service tracker for intake, repair status, technician notes and delivery dates.",
-  "features": [
-    {
-      "title": "Job cards",
-      "description": "Every phone gets a job card at intake."
-    },
-    {
-      "title": "Status updates",
-      "description": "Staff see what is pending, ready or delivered."
-    }
-  ],
-  "aiNote": "",
-  "results": [
-    "The first system, still the base of the shop's workflow"
-  ],
-  "stack": [
-    "React",
-    "Python",
-    "SQL"
-  ],
-  "duration": "5 weeks",
   "testimonial": {
     "quote": "The service tracking app improved how we handle repairs. Customers receive clearer updates and our front desk runs smoother.",
     "name": "Logu",
@@ -37,8 +7,44 @@
   "cover": "",
   "gallery": [],
   "liveUrl": "",
-  "featured": false,
+  "featured": true,
+  "published": true,
+  "slug": "mobile-service-tracker",
+  "title": "Mobile Service Tracker",
+  "client": "Sakthi Mobiles",
+  "industry": "Mobile service and repair",
+  "category": "erp",
+  "year": "2021",
+  "status": "in-use",
   "order": 9,
-  "size": "normal",
-  "published": true
+  "size": "wide",
+  "summary": "Where it all started: repair intake, status and delivery for a mobile shop.",
+  "problem": "Repairs were tracked on paper. Customers kept calling to ask about status, and phones waiting for parts were easy to lose track of.",
+  "solution": "A service tracker for intake, repair status, technician notes and delivery. It ran the shop's service desk for years and is now being rebuilt as a module inside Sakthi Inventory.",
+  "features": [
+    {
+      "title": "Job cards",
+      "description": "Every phone gets a job card at intake."
+    },
+    {
+      "title": "Status updates",
+      "description": "Staff see what is pending, ready or delivered."
+    },
+    {
+      "title": "Technician notes",
+      "description": "Fault, parts and charges recorded per job."
+    }
+  ],
+  "aiNote": "",
+  "results": [
+    "The first system, and the start of a client relationship since 2021",
+    "Being rebuilt inside Sakthi Inventory"
+  ],
+  "stack": [
+    "Angular",
+    "Node.js",
+    "Express",
+    "MySQL"
+  ],
+  "duration": "5 weeks"
 }

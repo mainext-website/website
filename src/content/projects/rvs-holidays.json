@@ -1,45 +1,56 @@
 {
-  "slug": "rvs-holidays",
-  "title": "RVS Holidays",
-  "client": "RVS Holidays",
-  "industry": "Travel agency",
-  "category": "website",
-  "year": "2025",
-  "status": "live",
-  "summary": "A travel agency website that turns visitors into WhatsApp and phone enquiries.",
-  "problem": "The agency relied on word of mouth and had no place to show packages online.",
-  "solution": "A fast, mobile-first website with tour packages, destination pages and one-tap enquiry.",
-  "features": [
-    {
-      "title": "Package pages",
-      "description": "Clear itineraries, inclusions and photos."
-    },
-    {
-      "title": "One-tap enquiry",
-      "description": "WhatsApp and call buttons on every package."
-    },
-    {
-      "title": "Search-ready",
-      "description": "SEO basics so the agency shows up on Google."
-    }
-  ],
-  "aiNote": "AI drafted package copy and image layouts that the client then reviewed.",
-  "results": [
-    "The agency now has a place to send customers",
-    "Enquiries come straight to WhatsApp"
-  ],
-  "stack": [
-    "React",
-    "Tailwind",
-    "SEO"
-  ],
-  "duration": "2 weeks",
   "testimonial": null,
   "cover": "",
   "gallery": [],
-  "liveUrl": "",
+  "liveUrl": "https://rvsholidays.in",
   "featured": true,
-  "order": 5,
+  "published": true,
+  "slug": "rvs-holidays",
+  "title": "RVS Holidays",
+  "client": "RVS Holidays",
+  "industry": "Travel & vehicle rental",
+  "category": "website",
+  "year": "2026",
+  "status": "live",
+  "order": 6,
   "size": "wide",
-  "published": true
+  "summary": "A travel and vehicle rental website with a fleet list, booking enquiries, reviews and an admin panel the owner runs.",
+  "problem": "The business relied on word of mouth. Customers had no place to see the vehicles, prices or past trips, and every enquiry came as a phone call with the same questions.",
+  "solution": "A fast, mobile-first site with the full fleet, vehicle pages, a booking enquiry form, photo gallery and customer reviews. The owner updates all of it from a phone-friendly admin panel, with no developer needed.",
+  "features": [
+    {
+      "title": "Fleet and vehicle pages",
+      "description": "Every vehicle with photos, capacity and details, with filters."
+    },
+    {
+      "title": "Booking enquiries",
+      "description": "Enquiry form on every vehicle; the owner gets an email and tracks status in the admin."
+    },
+    {
+      "title": "Reviews and gallery",
+      "description": "Customers post reviews; the owner approves them. Trip photos by category."
+    },
+    {
+      "title": "Owner admin panel",
+      "description": "Vehicles, enquiries, gallery, reviews and site settings, usable from a phone."
+    },
+    {
+      "title": "Search-ready",
+      "description": "Fast pages and SEO basics so the business shows up on Google."
+    }
+  ],
+  "aiNote": "AI drafted the PRD, screen mockups for desktop and mobile, and first-draft copy that the client reviewed.",
+  "results": [
+    "The agency now has a link to send every customer",
+    "The owner edits the site without a developer"
+  ],
+  "stack": [
+    "React",
+    "TypeScript",
+    "Tailwind",
+    "FastAPI",
+    "MySQL",
+    "Cloudinary"
+  ],
+  "duration": "Mar–Jun 2026"
 }

@@ -1,0 +1,66 @@
+{
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "published": true,
+  "slug": "nsl-operations",
+  "title": "NSL Operations Platform",
+  "client": "NSL",
+  "industry": "Water supply & building materials",
+  "category": "erp",
+  "year": "2026",
+  "status": "in-progress",
+  "order": 2,
+  "size": "wide",
+  "summary": "Order entry, credit and daily cash for a water and building materials supplier taking up to 2,000 orders a day.",
+  "problem": "NSL sells RO and borewell water by the tanker load plus cement, M-sand, bricks and its own hollow blocks. Cash orders went into a notebook; credit went into offline desktop software that lost a full Saturday of entries (₹4,00,000) when its LAN sync broke, twice. In peak season orders arrive 3–5 a minute, and staff did not trust any screen to keep up with a pen.",
+  "solution": "A cloud platform designed around one rule: order entry must be provably faster than the notebook. One config-driven order screen serves the water, materials and hollow-block units. Behind it sit a live queue, credit customers, suppliers, production, salaries and daily reconciliation, and the owner follows it all from a phone app.",
+  "features": [
+    {
+      "title": "Faster than a notebook",
+      "description": "Phone lookup, quantity presets and a keyboard-only flow; the target is a water order in under 5 seconds."
+    },
+    {
+      "title": "One engine, many units",
+      "description": "Water, materials and hollow blocks run from the same screen through unit configuration, not new code."
+    },
+    {
+      "title": "Live order queue",
+      "description": "The notebook's running list, on screen, for every counter."
+    },
+    {
+      "title": "Daily reconciliation",
+      "description": "Counter cash, digital payments and expenses close to the rupee every evening."
+    },
+    {
+      "title": "Credit customers",
+      "description": "Balances in two seconds and statements sent on WhatsApp."
+    },
+    {
+      "title": "Suppliers, production and salary",
+      "description": "Bulk purchases, hollow-block production and driver salaries in one place."
+    },
+    {
+      "title": "Owner app",
+      "description": "Installable dashboard on the owner's phone with all units or one at a time."
+    }
+  ],
+  "aiNote": "AI helped turn long discovery calls into a PRD, screen flows and a second-by-second UX spec for the order screen before any code was written.",
+  "results": [
+    "Replaces a notebook plus offline software that had lost data twice",
+    "New business units added through configuration",
+    "Built for 1,000–2,000 orders a day"
+  ],
+  "stack": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind",
+    "FastAPI",
+    "MySQL",
+    "PWA"
+  ],
+  "duration": "Since Apr 2026"
+}

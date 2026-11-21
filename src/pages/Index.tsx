@@ -10,13 +10,13 @@ import ProcessSection from "@/components/site/ProcessSection";
 import Testimonials from "@/components/site/Testimonials";
 import FaqSection from "@/components/site/FaqSection";
 import ContactSection from "@/components/site/ContactSection";
-import { featuredProjects, projects, site } from "@/lib/content";
+import { featuredProjects, projects, site, stats } from "@/lib/content";
 import { useMeta } from "@/lib/useMeta";
 
 const Index = () => {
   useMeta(
     "Mainext Innovations · Websites, ERP & Business Software by Parthiban V",
-    `${site.person.name} builds websites, billing software, custom ERPs and apps for growing businesses, with an AI-first workflow and ${site.experienceYears}+ years of IT experience.`,
+    `${site.person.name} builds websites, billing software, custom ERPs and apps for growing businesses, with an AI-first workflow and ${stats.years}+ years of IT experience.`,
     "/",
   );
   const homeWork = featuredProjects.filter((p) => p.status !== "own-product");

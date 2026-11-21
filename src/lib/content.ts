@@ -1,4 +1,5 @@
 import siteJson from "@/content/site.json";
+import legacySlugsJson from "@/content/legacy-slugs.json";
 
 export type ProjectCategory = "website" | "erp" | "billing" | "app" | "automation";
 export type ProjectStatus = "live" | "in-use" | "in-progress" | "own-product";
@@ -113,15 +114,24 @@ export const projects: Project[] = allProjects.filter((p) => p.published && p.sl
 export const featuredProjects = projects.filter((p) => p.featured);
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
 
+/** Old project URLs that were renamed, so links shared earlier still land on the right case study. */
+export const legacyProjectSlugs: Record<string, string> = legacySlugsJson;
+
 export type SiteSettings = typeof siteJson;
 export const site: SiteSettings = siteJson;
+
+/** Years in IT, counted from the career start year so it never goes stale. */
+export const careerYears = (start: number = site.careerStart) => Math.max(0, new Date().getFullYear() - (Number(start) || 0));
+
+/** Replace the `{years}` token used in editable text with the live years-in-IT count. */
+export const withYears = (text: string) => text.replace(/\{years\}/g, String(careerYears()));
 
 export const clientNames = Array.from(
   new Set(projects.map((p) => p.client).filter((c) => c && !/own product/i.test(c)).map((c) => c.replace(/\s*\(.*\)\s*$/, ""))),
 );
 
 export const stats = {
-  years: site.experienceYears,
+  years: careerYears(),
   freelanceYears: new Date().getFullYear() - site.freelanceSince,
   systems: projects.length,
   clients: clientNames.length,

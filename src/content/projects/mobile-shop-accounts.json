@@ -1,40 +1,60 @@
 {
-  "slug": "mobile-shop-accounts",
-  "title": "Mobile Shop Accounts",
-  "client": "Sakthi Mobiles",
-  "industry": "Mobile retail",
-  "category": "billing",
-  "year": "2022",
-  "status": "in-use",
-  "summary": "Money in, money out and vendor payments for a mobile shop.",
-  "problem": "Daily cash, vendor payments and expenses were in notebooks and spreadsheets.",
-  "solution": "A simple accounts app with daily entries, vendor balances and monthly summaries.",
-  "features": [
-    {
-      "title": "Daily entries",
-      "description": "Cash and bank in and out in a few taps."
-    },
-    {
-      "title": "Vendor balances",
-      "description": "See who is owed what at any time."
-    }
-  ],
-  "aiNote": "",
-  "results": [
-    "Month-end is no longer a guessing game"
-  ],
-  "stack": [
-    "React",
-    "Python",
-    "SQL"
-  ],
-  "duration": "4 weeks",
   "testimonial": null,
   "cover": "",
   "gallery": [],
   "liveUrl": "",
-  "featured": false,
-  "order": 8,
+  "featured": true,
+  "published": true,
+  "slug": "mobile-shop-accounts",
+  "title": "Sakthi Accounts",
+  "client": "Sakthi Mobiles",
+  "industry": "Mobile retail",
+  "category": "billing",
+  "year": "2025",
+  "status": "in-use",
+  "order": 7,
   "size": "normal",
-  "published": true
+  "summary": "Daily profit, expenses, credit and staff ledgers for a multi-branch mobile shop.",
+  "problem": "Each branch ran several counters (sales, recharge wallets, services) with daily cash, expenses, stock, staff advances and customer credit tracked in notebooks and an Excel sheet. Month-end profit was a guess.",
+  "solution": "A profit management system where the owner defines counters and operations, and staff enter the day's figures in forms built from that setup. Daily summaries add up the totals with formulas, and ledgers and reports show profit per branch.",
+  "features": [
+    {
+      "title": "Configurable counters and operations",
+      "description": "The owner adds a counter or a new entry type without a developer."
+    },
+    {
+      "title": "Smart daily summaries",
+      "description": "Fields can be manual, totalled from other entries, or calculated by formula."
+    },
+    {
+      "title": "Staff and customer ledgers",
+      "description": "Advances, salary, credit given and collected, per person."
+    },
+    {
+      "title": "Branch and role access",
+      "description": "Admin, supervisor, manager and employee each see their own scope."
+    },
+    {
+      "title": "Financial reports",
+      "description": "Financial overview and capital position across branches."
+    },
+    {
+      "title": "Recharge data built in",
+      "description": "Daily recharge sales arrive automatically from Sakthi EC."
+    }
+  ],
+  "aiNote": "AI helped turn the owner's Excel sheet into a configuration model, so new counters need setup instead of code.",
+  "results": [
+    "Month-end is no longer a guessing game",
+    "One system across branches and counters"
+  ],
+  "stack": [
+    "React",
+    "TypeScript",
+    "shadcn/ui",
+    "FastAPI",
+    "MySQL",
+    "Alembic"
+  ],
+  "duration": "Since Sep 2025 · ongoing"
 }
