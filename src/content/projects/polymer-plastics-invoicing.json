@@ -1,11 +1,19 @@
 {
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "published": true,
   "slug": "polymer-plastics-invoicing",
-  "title": "Polymer Plastics Invoicing",
-  "client": "Polymer Plastics",
+  "title": "Polymer Invoicing",
+  "client": "Pandeeswari Polymers",
   "industry": "Plastics manufacturing",
   "category": "billing",
-  "year": "2023",
+  "year": "2024",
   "status": "in-use",
+  "order": 8,
+  "size": "normal",
   "summary": "The invoice system adapted for a plastics manufacturer with its own billing rules.",
   "problem": "A manufacturer needed the same clarity in billing but with different units, rates and customer terms.",
   "solution": "Adapted the invoice platform with configurable units, rate lists and customer-specific terms.",
@@ -26,16 +34,8 @@
   ],
   "stack": [
     "React",
-    "Node.js",
-    "SQL"
+    "FastAPI",
+    "MySQL"
   ],
-  "duration": "3 weeks",
-  "testimonial": null,
-  "cover": "",
-  "gallery": [],
-  "liveUrl": "",
-  "featured": true,
-  "order": 4,
-  "size": "normal",
-  "published": true
+  "duration": "3 weeks"
 }

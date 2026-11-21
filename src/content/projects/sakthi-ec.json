@@ -1,0 +1,60 @@
+{
+  "testimonial": {
+    "quote": "Their recharge platform simplified multi-branch operations. The dashboard gave us clear control over daily transactions.",
+    "name": "MK Logu",
+    "role": "Manager, Sakthi Mobiles"
+  },
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "published": true,
+  "slug": "sakthi-ec",
+  "title": "Sakthi EC Recharge Platform",
+  "client": "Sakthi Mobiles",
+  "industry": "Mobile retail",
+  "category": "automation",
+  "year": "2025",
+  "status": "in-use",
+  "order": 5,
+  "size": "wide",
+  "summary": "Mobile, DTH and utility recharges for every branch, with credit limits, admin approval and daily operator reports.",
+  "problem": "Branch staff did recharges for customers through separate operator tools. The owner could not control how much each branch spent, see operator balances, or tell whether the day's recharge money added up.",
+  "solution": "A recharge platform connected to the M Robotics recharge API. Staff recharge from one screen, every login needs an OTP the admin approves on Telegram, each branch works within a credit limit, and a daily operator report works out opening balance, purchase, sales and profit per operator.",
+  "features": [
+    {
+      "title": "One-screen recharge",
+      "description": "Mobile, DTH and utility recharges with plan lookup and operator rules built in."
+    },
+    {
+      "title": "Branch credit limits",
+      "description": "Each branch spends from its own credit; the admin tops it up."
+    },
+    {
+      "title": "Telegram OTP approval",
+      "description": "Branch logins are approved by the owner from Telegram."
+    },
+    {
+      "title": "Operator daily report",
+      "description": "Opening, purchase, sales, closing and profit for every operator, every day."
+    },
+    {
+      "title": "Feeds the accounts system",
+      "description": "A secure API sends daily recharge figures to Sakthi Accounts automatically."
+    }
+  ],
+  "aiNote": "AI helped document the recharge flow and operator rules end to end, and review changes to money-handling code.",
+  "results": [
+    "Every recharge traceable by branch and staff",
+    "Daily operator profit without a spreadsheet",
+    "Client since 2021"
+  ],
+  "stack": [
+    "React",
+    "FastAPI",
+    "MySQL",
+    "Telegram Bot API",
+    "REST API"
+  ],
+  "duration": "Since May 2025 · ongoing"
+}

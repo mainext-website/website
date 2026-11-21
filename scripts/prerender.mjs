@@ -65,6 +65,11 @@ for (const slug of legacy) {
   const s = services.find((x) => x.slug === target);
   if (s) render({ path: `/services/${slug}`, title: `${s.title} · Mainext Innovations`, description: s.short, noindex: true });
 }
+const legacyProjects = JSON.parse(readFileSync(join(root, "src/content/legacy-slugs.json"), "utf8"));
+for (const [old, target] of Object.entries(legacyProjects)) {
+  const p = projects.find((x) => x.slug === target);
+  if (p) render({ path: `/work/${old}`, title: `${p.title} · Case study · Mainext`, description: p.summary, noindex: true });
+}
 render({ path: "/admin", title: "Admin · Mainext", description: "Admin", noindex: true });
 writeFileSync(join(dist, "404.html"), template.replace(/(<meta name="robots" content=")[^"]*(")/, `$1noindex$2`));
 

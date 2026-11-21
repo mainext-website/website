@@ -1,0 +1,70 @@
+{
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "",
+  "featured": true,
+  "published": true,
+  "slug": "acco-erp",
+  "title": "AC&CO Contracting ERP",
+  "client": "AC&CO",
+  "industry": "Civil contracting",
+  "category": "erp",
+  "year": "2026",
+  "status": "in-progress",
+  "order": 1,
+  "size": "large",
+  "summary": "A full ERP for a civil contractor where every payment is entered once and split across works, partners and vendors.",
+  "problem": "Two proprietors merged into one GST-registered company but still keep separate books. Tenders, works, purchases, labour, bank and cash, GST and invoices lived in separate Excel sheets and ledgers. A single ₹1,00,000 bank payment could touch three works, one vendor and one partner, and had to be typed into every sheet by hand.",
+  "solution": "One transaction engine sits at the centre. A business transaction is captured once, then allocated across work, partner, account and party, and every ledger, balance and report is derived from that single record. Around it are 21 modules covering the contracting lifecycle from tender to final bill.",
+  "features": [
+    {
+      "title": "Capture once, allocate everywhere",
+      "description": "One bank or cash entry is split across works, partners and vendors; no module keeps a private ledger."
+    },
+    {
+      "title": "Tender to work",
+      "description": "Tenders, EMD/ASD tracking, work orders, site handover and a status timeline per work."
+    },
+    {
+      "title": "Purchase, stock and labour",
+      "description": "Vendor purchases, site stock, labour masters and wages, all tied to a work."
+    },
+    {
+      "title": "Invoices and GST",
+      "description": "Client bills with GST, PF/ESI tracking and outstanding by party."
+    },
+    {
+      "title": "Partner books",
+      "description": "Each partner's share and balance stays independent inside one company."
+    },
+    {
+      "title": "Documents and reminders",
+      "description": "Agreements, insurance and certificates stored per work with expiry reminders."
+    },
+    {
+      "title": "Data onboarding",
+      "description": "Guided import of existing Excel data so the business starts with its real balances."
+    },
+    {
+      "title": "Owner dashboard and reports",
+      "description": "Work-wise profit, bank position and dues on one screen."
+    }
+  ],
+  "aiNote": "Built with an AI-first workflow: customer notes became a frozen requirement baseline, then one definition document per module, then code. AI wrote most of the 170+ backend and Playwright end-to-end test files that guard each module.",
+  "results": [
+    "21 modules planned around one transaction engine",
+    "Deployed in phases, one module at a time",
+    "170+ automated backend and end-to-end tests"
+  ],
+  "stack": [
+    "React",
+    "Vite",
+    "FastAPI",
+    "MySQL",
+    "Alembic",
+    "Playwright",
+    "Docker"
+  ],
+  "duration": "Since Aug 2026 · phased"
+}

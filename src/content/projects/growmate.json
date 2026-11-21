@@ -1,0 +1,65 @@
+{
+  "testimonial": null,
+  "cover": "",
+  "gallery": [],
+  "liveUrl": "https://growmate.mainext.in",
+  "featured": true,
+  "published": true,
+  "slug": "growmate",
+  "title": "GrowMate",
+  "client": "Own product",
+  "industry": "Personal finance",
+  "category": "app",
+  "year": "2025",
+  "status": "own-product",
+  "order": 10,
+  "size": "wide",
+  "summary": "My own personal finance app: income, spending, debts, investments and goals, with net worth in one place.",
+  "problem": "Most people track money across bank apps, notebooks and spreadsheets, and never see the full picture: what comes in, where it goes, what they owe, what they own and whether their goals are on track.",
+  "solution": "GrowMate brings it together: income with planned allocations, expenses, assets, debts, investments, insurance and goals, with net worth snapshots over time. It runs on the web and as a desktop app with automatic updates.",
+  "features": [
+    {
+      "title": "Income and allocation",
+      "description": "Split each income into savings, spending and goals as it arrives."
+    },
+    {
+      "title": "Expenses and debts",
+      "description": "Track spending by type and loans until they are cleared."
+    },
+    {
+      "title": "Investments and assets",
+      "description": "Holdings and their value over time."
+    },
+    {
+      "title": "Goals",
+      "description": "Set a target and see progress month by month."
+    },
+    {
+      "title": "Insurance",
+      "description": "Policies and premium dates in one list."
+    },
+    {
+      "title": "Net worth",
+      "description": "Regular snapshots show the whole picture moving."
+    },
+    {
+      "title": "Web and desktop",
+      "description": "Sign up with phone OTP; desktop app updates itself."
+    }
+  ],
+  "aiNote": "Designed, built and run end to end with an AI-first workflow, from data model to releases and usage analytics.",
+  "results": [
+    "Live with public sign-ups",
+    "Web app plus an auto-updating desktop app",
+    "Built and maintained end to end"
+  ],
+  "stack": [
+    "React",
+    "TypeScript",
+    "shadcn/ui",
+    "FastAPI",
+    "MySQL",
+    "Electron"
+  ],
+  "duration": "Ongoing"
+}

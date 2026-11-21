@@ -1,4 +1,5 @@
 import siteJson from "@/content/site.json";
+import legacySlugsJson from "@/content/legacy-slugs.json";
 
 export type ProjectCategory = "website" | "erp" | "billing" | "app" | "automation";
 export type ProjectStatus = "live" | "in-use" | "in-progress" | "own-product";
@@ -112,6 +113,9 @@ export const allProjects: Project[] = sortProjects(Object.values(modules).map(no
 export const projects: Project[] = allProjects.filter((p) => p.published && p.slug);
 export const featuredProjects = projects.filter((p) => p.featured);
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
+
+/** Old project URLs that were renamed, so links shared earlier still land on the right case study. */
+export const legacyProjectSlugs: Record<string, string> = legacySlugsJson;
 
 export type SiteSettings = typeof siteJson;
 export const site: SiteSettings = siteJson;

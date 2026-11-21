@@ -1,40 +1,4 @@
 {
-  "slug": "eclipse-invoicing",
-  "title": "Eclipse Invoice Manager",
-  "client": "Eclipse Innerwear",
-  "industry": "Textile distribution",
-  "category": "billing",
-  "year": "2023",
-  "status": "in-use",
-  "summary": "Invoice and billing system for a textile brand dispatching to many stores.",
-  "problem": "Invoices were typed by hand for every store dispatch. Repeated items, GST and edits made it slow and error-prone.",
-  "solution": "A guided invoice flow with saved products, customers and GST rules, printable invoices and searchable history.",
-  "features": [
-    {
-      "title": "Quick invoice",
-      "description": "Pick customer and items; totals and GST calculate themselves."
-    },
-    {
-      "title": "Print-ready",
-      "description": "Clean invoice layout ready to print or share as PDF."
-    },
-    {
-      "title": "History and search",
-      "description": "Find any past invoice in seconds."
-    }
-  ],
-  "aiNote": "AI generated the first version of the invoice templates and edge-case tests for GST calculations.",
-  "results": [
-    "Invoices take minutes instead of a long manual process",
-    "Fewer billing mistakes",
-    "Came through a referral"
-  ],
-  "stack": [
-    "React",
-    "Node.js",
-    "PDF"
-  ],
-  "duration": "4 weeks",
   "testimonial": {
     "quote": "Outstanding service. The invoice management system streamlined our distribution process and reduced manual confusion for our team.",
     "name": "Gandhi",
@@ -44,7 +8,62 @@
   "gallery": [],
   "liveUrl": "",
   "featured": true,
+  "published": true,
+  "slug": "eclipse-invoicing",
+  "title": "Eclipse Business Manager",
+  "client": "Eclipse Innerwear",
+  "industry": "Textile distribution",
+  "category": "billing",
+  "year": "2024",
+  "status": "in-use",
   "order": 3,
   "size": "normal",
-  "published": true
+  "summary": "Invoicing, dues, stock and agent commissions for an innerwear brand supplying stores across Tamil Nadu.",
+  "problem": "Every store dispatch was billed by hand. GST and non-GST invoices, size-wise pricing, part payments and returns made it slow and error-prone, and nobody had a clear view of who owed what.",
+  "solution": "Started as an invoice manager and grew over three years into the brand's daily system: GST and non-GST invoices, customer ledgers, cash entries, stock, orders, price lists, agent commissions and a phone app for the marketing team.",
+  "features": [
+    {
+      "title": "GST and non-GST invoices",
+      "description": "Multi-item, size-wise invoices with discounts, round-off and print or PDF."
+    },
+    {
+      "title": "Customer ledgers and dues",
+      "description": "Outstanding and overdue invoices per store, updated with every payment or return."
+    },
+    {
+      "title": "Stock and orders",
+      "description": "Stock levels and movements, and orders that turn into invoices."
+    },
+    {
+      "title": "Agent commission",
+      "description": "Agents tagged to stores earn a monthly commission on what was actually collected."
+    },
+    {
+      "title": "Price templates",
+      "description": "Saved GST and non-GST price lists, with bulk adjust and print."
+    },
+    {
+      "title": "Roles and mobile app",
+      "description": "Installable app; marketing staff see only customers and ledgers for their route."
+    },
+    {
+      "title": "Reports",
+      "description": "Product-by-size sales, collection summary and customer reports."
+    }
+  ],
+  "aiNote": "AI generated the first invoice templates and GST edge-case tests, and later the 40+ backend tests for the roles and permissions rollout.",
+  "results": [
+    "Invoices in minutes instead of a long manual process",
+    "In daily use since 2024",
+    "Came through a referral"
+  ],
+  "stack": [
+    "React",
+    "Grommet",
+    "FastAPI",
+    "MySQL",
+    "Alembic",
+    "PWA"
+  ],
+  "duration": "Since Jan 2024 · ongoing"
 }
