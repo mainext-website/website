@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence, animate, motion, useInView, useReducedMotion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
-import { featuredProjects, site, stats, whatsappLink } from "@/lib/content";
+import { featuredProjects, site, stats, whatsappLink, withYears } from "@/lib/content";
 import ProjectVisual from "./ProjectVisual";
 import { scrollToHash } from "./SiteNav";
 import { trackEvent } from "@/lib/analytics";
@@ -123,7 +123,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground"
           >
-            {site.hero.subtitle}
+            {withYears(site.hero.subtitle)}
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} className="mt-8 flex flex-wrap gap-3">
             <Link

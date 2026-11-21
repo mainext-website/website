@@ -12,7 +12,7 @@ const SettingsEditor = ({ value, onChange }: { value: SiteSettings; onChange: (v
         <div className="grid gap-4 sm:grid-cols-2">
           <Field label="Your name" htmlFor="s-name"><Text id="s-name" value={s.person.name} onChange={(v) => onChange({ ...s, person: { ...s.person, name: v } })} /></Field>
           <Field label="Role line" htmlFor="s-role"><Text id="s-role" value={s.person.role} onChange={(v) => onChange({ ...s, person: { ...s.person, role: v } })} /></Field>
-          <Field label="Years in IT" htmlFor="s-years"><Text id="s-years" type="number" value={String(s.experienceYears)} onChange={(v) => onChange({ ...s, experienceYears: Number(v) || 0 })} /></Field>
+          <Field label="Career started (year)" htmlFor="s-years" hint="Years in IT are counted from this automatically."><Text id="s-years" type="number" value={String(s.careerStart)} onChange={(v) => onChange({ ...s, careerStart: Number(v) || 0 })} /></Field>
           <Field label="Freelancing since (year)" htmlFor="s-since"><Text id="s-since" type="number" value={String(s.freelanceSince)} onChange={(v) => onChange({ ...s, freelanceSince: Number(v) || 0 })} /></Field>
         </div>
         <Toggle id="s-open" checked={s.availability.open} onChange={(v) => onChange({ ...s, availability: { ...s.availability, open: v } })} label="Show availability badge" hint="The green dot in the top bar." />
@@ -23,7 +23,7 @@ const SettingsEditor = ({ value, onChange }: { value: SiteSettings; onChange: (v
         <Field label="Rotating words" htmlFor="s-words" hint='Separate with commas. Reads as "I build the ___ your business runs on."'>
           <Text id="s-words" value={s.hero.words.join(", ")} onChange={(v) => onChange({ ...s, hero: { ...s.hero, words: v.split(",").map((w) => w.trim()).filter(Boolean) } })} />
         </Field>
-        <Field label="Subtitle" htmlFor="s-sub"><Area id="s-sub" value={s.hero.subtitle} onChange={(v) => onChange({ ...s, hero: { ...s.hero, subtitle: v } })} /></Field>
+        <Field label="Subtitle" htmlFor="s-sub" hint="Write {years} to show the live years-in-IT count."><Area id="s-sub" value={s.hero.subtitle} onChange={(v) => onChange({ ...s, hero: { ...s.hero, subtitle: v } })} /></Field>
       </Section>
 
       <Section title="Contact" desc="Empty fields are hidden on the site.">

@@ -5,7 +5,7 @@
     "role": "Full-stack engineer · AI-first builder",
     "photo": ""
   },
-  "experienceYears": 12,
+  "careerStart": 2014,
   "freelanceSince": 2021,
   "availability": {
     "open": true,
@@ -19,7 +19,7 @@
       "mobile app",
       "automation"
     ],
-    "subtitle": "Websites, billing and accounts software, custom ERPs and full apps for growing businesses. Built faster with AI, held to the standards of 12+ years in professional IT."
+    "subtitle": "Websites, billing and accounts software, custom ERPs and full apps for growing businesses. Built faster with AI, held to the standards of {years}+ years in professional IT."
   },
   "contact": {
     "email": "mainextinnovations@gmail.com",

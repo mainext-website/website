@@ -120,12 +120,18 @@ export const legacyProjectSlugs: Record<string, string> = legacySlugsJson;
 export type SiteSettings = typeof siteJson;
 export const site: SiteSettings = siteJson;
 
+/** Years in IT, counted from the career start year so it never goes stale. */
+export const careerYears = (start: number = site.careerStart) => Math.max(0, new Date().getFullYear() - (Number(start) || 0));
+
+/** Replace the `{years}` token used in editable text with the live years-in-IT count. */
+export const withYears = (text: string) => text.replace(/\{years\}/g, String(careerYears()));
+
 export const clientNames = Array.from(
   new Set(projects.map((p) => p.client).filter((c) => c && !/own product/i.test(c)).map((c) => c.replace(/\s*\(.*\)\s*$/, ""))),
 );
 
 export const stats = {
-  years: site.experienceYears,
+  years: careerYears(),
   freelanceYears: new Date().getFullYear() - site.freelanceSince,
   systems: projects.length,
   clients: clientNames.length,
