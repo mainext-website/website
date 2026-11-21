@@ -12,7 +12,7 @@
   "category": "billing",
   "year": "2025",
   "status": "in-use",
-  "order": 7,
+  "order": 8,
   "size": "normal",
   "summary": "Daily profit, expenses, credit and staff ledgers for a multi-branch mobile shop.",
   "problem": "Each branch ran several counters (sales, recharge wallets, services) with daily cash, expenses, stock, staff advances and customer credit tracked in notebooks and an Excel sheet. Month-end profit was a guess.",

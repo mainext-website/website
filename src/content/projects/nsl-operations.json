@@ -1,7 +1,28 @@
 {
   "testimonial": null,
-  "cover": "",
-  "gallery": [],
+  "cover": "/uploads/projects/nsl-operations/owner-dashboard.webp",
+  "gallery": [
+    {
+      "src": "/uploads/projects/nsl-operations/order-entry.webp",
+      "caption": "Water order entry: phone lookup, presets, one key to save"
+    },
+    {
+      "src": "/uploads/projects/nsl-operations/dispatch-board.webp",
+      "caption": "Dispatch board for the materials counter"
+    },
+    {
+      "src": "/uploads/projects/nsl-operations/tv-live-queue.webp",
+      "caption": "Live queue on the shop TV, the notebook on a screen"
+    },
+    {
+      "src": "/uploads/projects/nsl-operations/whatsapp-statement.webp",
+      "caption": "Customer statement ready to share on WhatsApp"
+    },
+    {
+      "src": "/uploads/projects/nsl-operations/mobile-dispatch.webp",
+      "caption": "Dispatch from a phone"
+    }
+  ],
   "liveUrl": "",
   "featured": true,
   "published": true,
@@ -11,7 +32,7 @@
   "industry": "Water supply & building materials",
   "category": "erp",
   "year": "2026",
-  "status": "in-progress",
+  "status": "in-use",
   "order": 2,
   "size": "wide",
   "summary": "Order entry, credit and daily cash for a water and building materials supplier taking up to 2,000 orders a day.",
@@ -49,9 +70,9 @@
   ],
   "aiNote": "AI helped turn long discovery calls into a PRD, screen flows and a second-by-second UX spec for the order screen before any code was written.",
   "results": [
+    "In daily use at the water and materials counters",
     "Replaces a notebook plus offline software that had lost data twice",
-    "New business units added through configuration",
-    "Built for 1,000–2,000 orders a day"
+    "New business units added through configuration"
   ],
   "stack": [
     "React",

@@ -12,8 +12,17 @@ Update the matching `src/content/projects/*.json` (or use /admin) when a project
 | sakthi-ec | sakthi-ec/ec_backend, ec_frontend | Recharge platform (M Robotics API), Telegram OTP, operator daily report, external API for Accounts. |
 | mobile-shop-accounts | sakthi-profits/react, python, backend_old, frontend_old | "Sakthi Profit / Accounts", accounts.mainext.in. |
 | rvs-holidays | travels-booking/rvs-holidays | Public site rvsholidays.in + admin panel. |
-| polymer-plastics-invoicing | mainext-dev-ops/parthi-vps (polymer/) | App repos (Pandeeswari-polymers org) were not accessible. |
+| polymer-plastics-invoicing | Pandeeswari-polymers/polymer_ui, polymer_backend | Forked from Eclipse Jun 2024; IGST added Nov 2025; live at polymers.mainext.in (not linked). |
 | mobile-service-tracker | mainext-dev-ops/sakthi-vps (sakthi-service/) | Angular 4 + Express; app repos (sakthi-mobiles org) were not accessible. |
-| growmate | mainext-dev-ops/sakthi-vps (growmate/), parthi-vps scripts | Own product; app repo not accessible. |
+| growmate | mainext-dev-ops/sakthi-vps (growmate/), parthi-vps scripts, growmate.mainext.in | Own product; app repo not yet accessible. |
+| texora-website | TexoraInternational/website (public) | Static site, live at www.texorainternational.com. |
+
+## Screenshots (`public/uploads/projects/<slug>/`)
+
+- acco-erp: in-app user guide images (`frontend/src/features/help/images`), demo data.
+- nsl-operations: QA screenshots from git history (`qa/*/screenshots`, removed from main later), test data.
+- eclipse-invoicing: captured from a local demo copy seeded with fictional customers and products.
+- rvs-holidays, texora-website, growmate: captured from the live public sites.
+- Never publish screenshots of production data (real customer names, phone numbers, bank details).
 
 Renamed slugs redirect through `src/content/legacy-slugs.json`.

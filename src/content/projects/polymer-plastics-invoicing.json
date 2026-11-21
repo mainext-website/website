@@ -6,36 +6,54 @@
   "featured": true,
   "published": true,
   "slug": "polymer-plastics-invoicing",
-  "title": "Polymer Invoicing",
+  "title": "Polymer Billing",
   "client": "Pandeeswari Polymers",
   "industry": "Plastics manufacturing",
   "category": "billing",
   "year": "2024",
   "status": "in-use",
-  "order": 8,
+  "order": 9,
   "size": "normal",
-  "summary": "The invoice system adapted for a plastics manufacturer with its own billing rules.",
-  "problem": "A manufacturer needed the same clarity in billing but with different units, rates and customer terms.",
-  "solution": "Adapted the invoice platform with configurable units, rate lists and customer-specific terms.",
+  "summary": "GST billing, dues and ledgers for a plastics manufacturer, built on the Eclipse base.",
+  "problem": "The factory billed by hand. Every invoice needed weights, box sizes, GST and a vehicle number, plus separate copies for the buyer and the transporter, and the running balance for each buyer had to be worked out separately.",
+  "solution": "Adapted the proven Eclipse invoice platform to the factory's rules: weight-based lines, CGST/SGST or IGST by buyer, vehicle number on every invoice and print-ready copies, with payments and ledgers so dues stay current.",
   "features": [
     {
-      "title": "Configurable units and rates",
-      "description": "Kg, pieces, bags and custom rate lists."
+      "title": "GST invoices",
+      "description": "CGST + SGST for local buyers and IGST for other states, with HSN codes and round-off."
     },
     {
-      "title": "Customer terms",
-      "description": "Credit days and pricing per customer."
+      "title": "Weight and pack sizes",
+      "description": "Lines by product, size and pack, with weight in kg on the print."
+    },
+    {
+      "title": "Transport-ready prints",
+      "description": "Vehicle number on the invoice and separate copies for buyer and transporter."
+    },
+    {
+      "title": "Payments and ledgers",
+      "description": "Cash entries update each buyer's outstanding; ledgers and reports print on demand."
+    },
+    {
+      "title": "Dashboard",
+      "description": "Sales, collections and outstanding at a glance."
+    },
+    {
+      "title": "Daily backup",
+      "description": "The database is backed up and emailed every day."
     }
   ],
-  "aiNote": "AI helped map the differences between the two businesses and refactor the shared code safely.",
+  "aiNote": "AI helped map the differences between the two businesses and adapt the shared code safely.",
   "results": [
-    "Delivered faster by reusing a proven base",
+    "Delivered fast by reusing a proven base",
+    "In use since 2024, now on managed hosting",
     "Billing matches how the factory actually sells"
   ],
   "stack": [
     "React",
+    "Grommet",
     "FastAPI",
     "MySQL"
   ],
-  "duration": "3 weeks"
+  "duration": "Since Jun 2024"
 }

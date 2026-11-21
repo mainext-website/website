@@ -1,0 +1,59 @@
+{
+  "slug": "texora-website",
+  "title": "Texora International",
+  "client": "Texora International",
+  "industry": "Hair accessories manufacturing (B2B)",
+  "category": "website",
+  "year": "2025",
+  "status": "live",
+  "summary": "A B2B website for a satin scrunchie manufacturer, built to win wholesale and brand enquiries.",
+  "problem": "Texora makes premium satin scrunchies for wholesalers, boutiques and fashion brands, but had no website to send buyers. Products, capabilities and contact details were shared one chat at a time.",
+  "solution": "A fast, mobile-first company site that tells the brand story, shows the product range and makes it easy for a buyer to ask for a quote on WhatsApp or by form.",
+  "features": [
+    {
+      "title": "Quote-first hero",
+      "description": "\"Request Price Quote\" and \"View Products\" are the first two things a buyer sees."
+    },
+    {
+      "title": "Product range",
+      "description": "Solid colours and printed designs in a clean gallery."
+    },
+    {
+      "title": "Brand story",
+      "description": "About section with short videos of the work and why buyers choose Texora."
+    },
+    {
+      "title": "Global supply",
+      "description": "What Texora offers wholesalers and brands, with an FAQ for common questions."
+    },
+    {
+      "title": "WhatsApp everywhere",
+      "description": "A floating WhatsApp button on every screen, plus a newsletter sign-up."
+    }
+  ],
+  "aiNote": "AI turned the client's content PDF into first-draft copy and section layouts that the client then reviewed.",
+  "results": [
+    "Live at texorainternational.com",
+    "A link buyers can trust before the first call"
+  ],
+  "stack": [
+    "HTML5",
+    "Bootstrap 5",
+    "JavaScript",
+    "GitHub Pages"
+  ],
+  "duration": "Oct–Nov 2025",
+  "testimonial": null,
+  "cover": "/uploads/projects/texora-website/home.webp",
+  "gallery": [
+    {
+      "src": "/uploads/projects/texora-website/mobile-home.webp",
+      "caption": "Mobile-first layout"
+    }
+  ],
+  "liveUrl": "https://www.texorainternational.com",
+  "featured": true,
+  "order": 7,
+  "size": "wide",
+  "published": true
+}

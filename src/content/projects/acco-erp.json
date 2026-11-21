@@ -1,7 +1,24 @@
 {
   "testimonial": null,
-  "cover": "",
-  "gallery": [],
+  "cover": "/uploads/projects/acco-erp/bank-cash.webp",
+  "gallery": [
+    {
+      "src": "/uploads/projects/acco-erp/transactions.webp",
+      "caption": "Every transaction with its partner, work and allocation status"
+    },
+    {
+      "src": "/uploads/projects/acco-erp/labour-sheet.webp",
+      "caption": "Monthly labour sheet with PF, ESI and salary per work"
+    },
+    {
+      "src": "/uploads/projects/acco-erp/invoices.webp",
+      "caption": "Client invoices, receipts and outstanding by work and client"
+    },
+    {
+      "src": "/uploads/projects/acco-erp/phone.webp",
+      "caption": "The same books on a phone"
+    }
+  ],
   "liveUrl": "",
   "featured": true,
   "published": true,
@@ -11,7 +28,7 @@
   "industry": "Civil contracting",
   "category": "erp",
   "year": "2026",
-  "status": "in-progress",
+  "status": "in-use",
   "order": 1,
   "size": "large",
   "summary": "A full ERP for a civil contractor where every payment is entered once and split across works, partners and vendors.",
@@ -51,10 +68,10 @@
       "description": "Work-wise profit, bank position and dues on one screen."
     }
   ],
-  "aiNote": "Built with an AI-first workflow: customer notes became a frozen requirement baseline, then one definition document per module, then code. AI wrote most of the 170+ backend and Playwright end-to-end test files that guard each module.",
+  "aiNote": "Built with an AI-first workflow: customer notes became a frozen requirement baseline, then one definition document per module, then code. AI wrote most of the 170+ backend and Playwright end-to-end test files that guard each module. The in-app user guide, with a screenshot for every step, was generated the same way.",
   "results": [
-    "21 modules planned around one transaction engine",
-    "Deployed in phases, one module at a time",
+    "In daily use by both partners and the office",
+    "21 modules built around one transaction engine",
     "170+ automated backend and end-to-end tests"
   ],
   "stack": [
@@ -66,5 +83,5 @@
     "Playwright",
     "Docker"
   ],
-  "duration": "Since Aug 2026 · phased"
+  "duration": "Since Aug 2026 · rolled out in phases"
 }

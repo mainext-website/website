@@ -4,8 +4,21 @@
     "name": "Gandhi",
     "role": "Business Owner, Eclipse Innerwear"
   },
-  "cover": "",
-  "gallery": [],
+  "cover": "/uploads/projects/eclipse-invoicing/dashboard.webp",
+  "gallery": [
+    {
+      "src": "/uploads/projects/eclipse-invoicing/invoices.webp",
+      "caption": "Invoices with print and WhatsApp share"
+    },
+    {
+      "src": "/uploads/projects/eclipse-invoicing/stock.webp",
+      "caption": "Stock by product and size with low-stock alerts"
+    },
+    {
+      "src": "/uploads/projects/eclipse-invoicing/mobile-customers.webp",
+      "caption": "Customer list in the installable mobile app"
+    }
+  ],
   "liveUrl": "",
   "featured": true,
   "published": true,
@@ -51,7 +64,7 @@
       "description": "Product-by-size sales, collection summary and customer reports."
     }
   ],
-  "aiNote": "AI generated the first invoice templates and GST edge-case tests, and later the 40+ backend tests for the roles and permissions rollout.",
+  "aiNote": "AI generated the first invoice templates and GST edge-case tests, and later the 40+ backend tests for the roles and permissions rollout. Screenshots here are from a demo copy with sample data.",
   "results": [
     "Invoices in minutes instead of a long manual process",
     "In daily use since 2024",

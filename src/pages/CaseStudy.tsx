@@ -100,7 +100,7 @@ export const CaseStudyBody = ({ project: p, preview }: { project: Project; previ
           {p.gallery.map((g, i) => (
             <Reveal key={g.src + i} className={i === 0 && p.gallery.length % 2 === 1 ? "sm:col-span-2" : ""}>
               <figure>
-                <img src={assetUrl(g.src)} alt={g.caption || `${p.title} screen ${i + 1}`} loading="lazy" className="w-full rounded-2xl border border-border" />
+                <img src={assetUrl(g.src)} alt={g.caption || `${p.title} screen ${i + 1}`} loading="lazy" className="mx-auto max-h-[80vh] w-auto max-w-full rounded-2xl border border-border" />
                 {g.caption && <figcaption className="mt-2 text-sm text-muted-foreground">{g.caption}</figcaption>}
               </figure>
             </Reveal>

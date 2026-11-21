@@ -1,21 +1,30 @@
 {
   "testimonial": null,
-  "cover": "",
-  "gallery": [],
+  "cover": "/uploads/projects/rvs-holidays/home.webp",
+  "gallery": [
+    {
+      "src": "/uploads/projects/rvs-holidays/fleet.webp",
+      "caption": "The full fleet: cars, tempo travellers and buses"
+    },
+    {
+      "src": "/uploads/projects/rvs-holidays/mobile-home.webp",
+      "caption": "Built for phones first"
+    }
+  ],
   "liveUrl": "https://rvsholidays.in",
   "featured": true,
   "published": true,
   "slug": "rvs-holidays",
   "title": "RVS Holidays",
   "client": "RVS Holidays",
-  "industry": "Travel & vehicle rental",
+  "industry": "Travel & vehicle hire",
   "category": "website",
   "year": "2026",
   "status": "live",
   "order": 6,
   "size": "wide",
-  "summary": "A travel and vehicle rental website with a fleet list, booking enquiries, reviews and an admin panel the owner runs.",
-  "problem": "The business relied on word of mouth. Customers had no place to see the vehicles, prices or past trips, and every enquiry came as a phone call with the same questions.",
+  "summary": "A website for a cab, tempo traveller and bus hire business in Theni and Bodi, with booking enquiries, reviews and an owner admin panel.",
+  "problem": "The business relied on word of mouth and phone calls. Customers had no place to see the vehicles or past trips, and every enquiry started with the same questions.",
   "solution": "A fast, mobile-first site with the full fleet, vehicle pages, a booking enquiry form, photo gallery and customer reviews. The owner updates all of it from a phone-friendly admin panel, with no developer needed.",
   "features": [
     {
